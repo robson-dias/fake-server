@@ -128,6 +128,6 @@ app.post("/generate_update_payment_method_url", async (req, res) => {
   return res.json(resposta.hosted_page);
 });
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
   console.log("Server started!");
 });
